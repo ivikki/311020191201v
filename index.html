@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frontend test</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="block-information">
+                <div class="block-information__photo">
+                    <img class="block-information__photo_img" src="img/photo_author.png" alt="photo_author">
+                </div>
+                <div class="block-information__text">
+                    <h3>Вероника Ростова</h3>
+                    <span>Менеджер по продажам</span>
+                    <div class="block-information_orange-block">
+                        <p> Подберу для вас самые лучшие предложения.</p>
+                        <p>Мои услуги абсолютно бесплатны</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block-services">
+                <p>Услуг</p>
+                <div class="block-services__table">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-services_text">Ручное бронирование</div>
+                                <div style="width: 70%; background: #b1e19b" class="block-services__table_absolute"></div>
+                            </td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-services_text">Пакетные туры</div>
+                                <div style="width: 15%; background: #ace2f8" class="block-services__table_absolute"></div>
+                            </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-services_text">Отели</div>
+                                <div style="width: 5%; background: #ace2f8" class="block-services__table_absolute"></div>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="block-services_total">
+                    <span>Всего</span>
+                    <span>15</span>
+                </div>
+            </div>
+            <div class="comment-list" id="comment-list">
+                <div class="comment-list__heading">
+                    <h3>Последние отзывы</h3><a href="#">Все отзывы</a>
+                    <div class="comment-list__quantity">
+                        <span class="comment-list__quantity-img comment-list__quantity-img_likes">131</span>
+                        <span class="comment-list__quantity-img comment-list__quantity-img_comments">14</span>
+                    </div>
+                    </div>
+                <div class="block-comment">
+                    <h4 class="block-comment__name">Самуил<time>13 октября 2011</time></h4>
+                    <div class="block-comment__text">
+                        <p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+                    </div>
+                </div>
+                <div class="block-comment">
+                    <h4 class="block-comment__name">Лилия Семёновна<time>14 октября 2011</time></h4>
+                    <div class="block-comment__text">
+                        <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+                    </div>
+                </div>
+                <div class="block-comment">
+                    <h4 class="block-comment__name">Лилия Семёновна<time>14 октября 2011</time></h4>
+                    <div class="block-comment__text">
+                        <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-form-wrapper">
+            <form class="comment-form container">
+                <textarea id="text-comment"></textarea>
+                <button type="submit" id="js-add-comment">Написать консультанту</button>
+            </form>
+        </div>
+    <script src="js/main.js"></script>
+    </body>
+</html>
